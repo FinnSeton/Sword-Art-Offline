@@ -24,7 +24,7 @@ body {
   margin-top: 25px;
   user-select: none;
   transition: transform;
-	transition-duration: 70ms;
+  transition-duration: 70ms;
 }
 
 #enemyhpbar {
@@ -36,7 +36,7 @@ body {
   position: relative;
   user-select: none;
   transition: transform;
-	transition-duration: 70ms;
+  transition-duration: 70ms;
 }
 
 #attackmenu {
@@ -54,7 +54,7 @@ body {
   margin-top: 48%;
   position: absolute;
   user-select: none;
-  
+
 }
 
 #dobbleoutput {
@@ -65,4 +65,38 @@ body {
   color: white;
   font-size: 300%;
   user-select: none;
+}
+
+#swordatk {
+  height: 80px;
+  width: 150px;
+  border-radius: 15px;
+  background-image: url(IMG/sword-backdrop.png);
+  background-size: 400%;
+  color: white;
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+}
+
+#archatk {
+  height: 80px;
+  width: 150px;
+  border-radius: 15px;
+  background-image: url(IMG/archer-backdrop.png);
+  background-size: 100%;
+  color: white;
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+
+}
+
+#magicatk {
+  height: 80px;
+  width: 150px;
+  border-radius: 15px;
+  background-image: url(IMG/magic-backdrop.png);
+  color: white;
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+}
+
+#run {
+  height: 50px;
 }
