@@ -21,6 +21,9 @@ function battle() {
     div.innerHTML = `<b>Enemy ${enemyhp}HP</b>`;
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 "+parseFloat(enemyhp).toFixed(2)+"%"+", #ff0000 0%)"
     document.body.appendChild(div);
+
+    
+
 }
 
 battle()
