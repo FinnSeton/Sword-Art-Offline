@@ -7,8 +7,8 @@ function dobble(min, max) {
 }
 
 function battle() {
-    var playerhp = 40
-    var enemyhp = 50
+    var playerhp = 100
+    var enemyhp = 100
 
     var div = document.createElement("div");
     div.setAttribute("id", "playerhpbar");
