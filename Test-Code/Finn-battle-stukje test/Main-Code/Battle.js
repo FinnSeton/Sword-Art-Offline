@@ -7,7 +7,7 @@ function battle() {
 
     var div = document.createElement("div");
     div.setAttribute("id", "playerhpbar");
-    div.innerHTML = `${playerhp}HP`;
+    div.innerHTML = `<b>${playerhp}HP</b>`;
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 "+parseFloat(playerhp).toFixed(2)+"%"+", #ff0000 0%)"
     document.body.appendChild(div);
     
