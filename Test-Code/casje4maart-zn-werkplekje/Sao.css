@@ -1,0 +1,13 @@
+body {
+    background-image: url("IMG/map.png");
+    background-repeat: no-repeat;
+    background-size: cover 
+  }
+
+img {
+  height: 160px; 
+  opacity: 90%;
+  margin-left: 41.5%;
+  margin-top: 3.5%;
+}
+  
