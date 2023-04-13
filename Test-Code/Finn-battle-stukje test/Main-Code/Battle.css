@@ -9,12 +9,6 @@ body {
   font-family: 'Fira Mono', monospace;
 }
 
-/* img {
-  height: 160px; 
-  opacity: 90%;
-  margin-left: 41.5%;
-  margin-top: 3.5%;
-} */
 
 #playerhpbar {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -40,8 +34,8 @@ body {
 }
 
 #attackmenu {
-  margin-left: 62.2%;
-  margin-top: 41%;
+  bottom: 0;
+  right: 0;
   background-color: wheat;
   width: 700px;
   height: 250px;
@@ -50,17 +44,16 @@ body {
 }
 
 #dobblesteen {
-  margin-left: 92.5%;
-  margin-top: 48%;
+  bottom: 0;
+  right: 0;
   position: absolute;
   user-select: none;
-
 }
 
 #dobbleoutput {
+  bottom: 0;
+  right: 0;
   text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
-  margin-left: 94.7%;
-  margin-top: 49.5%;
   position: absolute;
   color: white;
   font-size: 300%;

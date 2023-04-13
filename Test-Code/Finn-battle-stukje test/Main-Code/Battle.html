@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="Battle.css">
 	<title>Sword Art Offline</title>
 </head>
+
 <body>
 	<div id="playerhpbar"></div>
 	<div id="enemyhpbar"></div>
@@ -14,16 +16,18 @@
 		<button id="archatk">Archer Attacks</button>
 		<button id="magicatk">Magic Attacks</button>
 		<button id="run">Run!</button>
+		<div id="dobblesteen">
+			<button onclick="document.getElementById('dobbleoutput').innerHTML =  dobble(1,5)"><img src="IMG/dobble.png"
+					style="width: 100px;"></button>
+		</div>
+		<div id="dobbleoutput"></div>
+	</div>
 
-	</div>
-	<div id="dobblesteen">
-		<button onclick="document.getElementById('dobbleoutput').innerHTML =  dobble(1,5)"><img src="IMG/dobble.png" style="width: 100px;"></button>
-	</div>
-	<div id="dobbleoutput"></div>
 	<button id="attackBtn">Attack</button>
 
 
-	
-</body>	
+
+</body>
 <script src="Battle.js"></script>
-</html> 
+
+</html>
