@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="startscherm.css">
+	<title>Sword Art Offline</title>
+</head>
+<body>
+	
+	<div id="buttons">
+		<button id="start" onclick="linkstart()">Start</button>
+		<button id="credits">Credits</button>
+	</div>
+	<div id="sao">
+		<p>Sword Art Online</p>
+	</div>
+	
+</body>
+<script>
+	function linkstart() {
+		setTimeout(500)
+		var gif = new Image();
+		gif.src = "https://vignette.wikia.nocookie.net/swordartonline/images/b/b3/Link_Start.gif/revision/latest?cb=20160524005521";
+		gif.style.position = 'absolute';
+		gif.style.height = '1080px';
+		gif.style.width = '1920px';
+		gif.style.left = '0';
+		gif.style.top = '0';
+		document.body.appendChild(gif);
+		buttons.parentNode.removeChild(buttons);
+		sao.parentNode.removeChild(sao);
+		setTimeout(function() {
+			window.location.href = "";
+		}, 1000);}
+		
+</script>
+</html> 

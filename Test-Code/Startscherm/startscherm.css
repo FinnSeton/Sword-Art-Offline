@@ -1,0 +1,50 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url("IMG/kirittoback.png");
+  background-size: cover;
+}
+
+* {
+  font-family: 'Fira Mono', monospace;
+  user-select: none;
+}
+
+#buttons {
+  margin-top: 30%;
+  right: 0;
+  position: absolute;
+}
+
+#start {
+  left: 200px;
+  bottom: 85px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 3.4em;
+  position: relative;
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+#credits {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 2em;
+  position: relative;
+}
+
+#sao {
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+  position: absolute;
+  color: white;
+  font-size: 300%;
+  user-select: none;
+}
