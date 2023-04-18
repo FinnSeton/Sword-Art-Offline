@@ -21,6 +21,6 @@ const kaarten = [
         'name':'Multi-slash',
         'type': 'Sword skill',
         'description':'A multi-slash that stacks with a D4. Does 2 Damage per slash.'
-    }
+    },
 
 ]
