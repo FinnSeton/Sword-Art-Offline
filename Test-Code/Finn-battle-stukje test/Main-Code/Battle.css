@@ -58,10 +58,15 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 /* Selectie Menu Buttons */
 /*----------------------------------- */
+#Attacksbuttons {
+  position: absolute;
+  top: 500px;
+}
 .Attack1 {
-  margin-top: 20px;
+  left: 250px;
   display: block;
   width: 200px;
   height: 40px;
@@ -69,9 +74,11 @@ body {
   border-radius: 5px;
   background: white;
   color: black;
+  position: absolute;
 }
+
 .Attack2 {
-  margin-top: 20px;
+  left: 550px;
   display: block;
   width: 200px;
   height: 40px;
@@ -79,9 +86,11 @@ body {
   border-radius: 5px;
   background: white;
   color: black;
+  position: absolute;
 }
+
 .Attack3 {
-  margin-top: 20px;
+  left: 850px;
   display: block;
   width: 200px;
   height: 40px;
@@ -89,9 +98,11 @@ body {
   border-radius: 5px;
   background: white;
   color: black;
+  position: absolute;
 }
+
 .Attack4 {
-  margin-top: 20px;
+  left: 1150px;
   display: block;
   width: 200px;
   height: 40px;
@@ -99,9 +110,11 @@ body {
   border-radius: 5px;
   background: white;
   color: black;
+  position: absolute;
 }
+
 .Attack5 {
-  margin-top: 20px;
+  left: 1450px;
   display: block;
   width: 200px;
   height: 40px;
@@ -109,7 +122,9 @@ body {
   border-radius: 5px;
   background: white;
   color: black;
+  position: absolute;
 }
+
 /*----------------------------------- */
 
 #selectionBtn {
