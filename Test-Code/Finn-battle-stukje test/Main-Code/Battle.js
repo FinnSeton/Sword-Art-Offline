@@ -28,11 +28,31 @@ function hpsysteem() {
     document.body.appendChild(div);
 }
 
-var attackBtn = document.getElementById("attackBtn");
-attackBtn.addEventListener("click", function () {
-    playerhp = playerhp - 10;
-    hpsysteem()
-});
+// var attackBtn = document.getElementById("attackBtn");
+// attackBtn.addEventListener("click", function () {
+//     playerhp = playerhp - 10;
+//     hpsysteem()
+// });
 
 
 hpsysteem()
+
+
+var selectionBtn = document.getElementById("selectionBtn");
+selectionBtn.addEventListener("click", function () {
+    var selectionScreen = document.createElement("div");
+    selectionScreen.setAttribute("id", "selectionScreen");
+    document.body.appendChild(selectionScreen);
+    for (var i = 1; i <= 5; i++) {
+        var btn = document.createElement("button");
+        btn.innerHTML = "Attack " + i;
+        btn.classList.add("Attack" + i);
+        selectionScreen.appendChild(btn);
+        btn.addEventListener("click", function () {
+            playerhp = playerhp - 10;
+            hpsysteem()
+            selectionScreen.parentNode.removeChild(selectionScreen);
+        });
+    }
+});
+
