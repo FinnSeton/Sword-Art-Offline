@@ -1,0 +1,35 @@
+START VAKJE = Top margin 0, left margin 430
+
+PAD LINKS VAK 1 = Top margin 10, left margin 405
+PAD LINKS VAK 2 = Top margin 30, left margin 390
+PAD LINKS VAK 3 = Top margin 35, left margin 380
+PAD LINKS VAK 4 = Top margin 45, left margin 365
+PAD LINKS VAK 5 = Top margin 50, left margin 350
+PAD LINKS VAK 6 = Top margin 60, left margin 350
+PAD LINKS VAK 7 = Top margin 60, left margin 340
+PAD LINKS VAK 8 = Top margin 65, left margin 325
+PAD LINKS VAK 9 = Top margin 45, left margin 365
+PAD LINKS VAK 10 = Top margin 70, left margin 315
+PAD LINKS VAK 11 = Top margin 80, left margin 310
+PAD LINKS VAK 12 = Top margin 90, left margin 300
+PAD LINKS VAK 13 = Top margin 100, left margin 285
+PAD LINKS VAK 14 = Top margin 110, left margin 280
+PAD LINKS VAK 15 = Top margin 120, left margin 270
+PAD LINKS VAK 16 = Top margin 130, left margin 260
+PAD LINKS VAK 17 = Top margin 145, left margin 250
+PAD LINKS VAK 18 = Top margin 160, left margin 245
+PAD LINKS VAK 19 = Top margin 170, left margin 245
+PAD LINKS VAK 20 = Top margin 185, left margin 240
+PAD LINKS VAK 21 = Top margin 200, left margin 240
+PAD LINKS VAK 22 = Top margin 215, left margin 240
+PAD LINKS VAK 23 = Top margin 225, left margin 240
+PAD LINKS VAK 24 = Top margin 240, left margin 250
+PAD LINKS VAK 25 = Top margin 250, left margin 255
+PAD LINKS VAK 26 = Top margin 265, left margin 265
+PAD LINKS VAK 27 = Top margin 290, left margin 310
+PAD LINKS VAK 28 = Top margin 295, left margin 340
+PAD LINKS VAK 29 = Top margin 300, left margin 355
+PAD LINKS VAK 30 = Top margin 300, left margin 365
+PAD LINKS VAK 31 = Top margin 300, left margin 380
+KASTEEL LINKER PAD = Top margin 300, left margin 435
+
