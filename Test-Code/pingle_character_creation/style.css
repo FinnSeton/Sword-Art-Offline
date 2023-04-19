@@ -6,3 +6,18 @@ body{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+#cards {
+    float: right;
+    position: relative;
+    bottom: 650px;
+    left: 250px;
+}
+
+#input {
+    float: right;
+    position: relative;
+    bottom: 750px;
+    right: 700px;
+    color: white;
+}
