@@ -28,11 +28,70 @@ function hpsysteem() {
     document.body.appendChild(div);
 }
 
-var attackBtn = document.getElementById("attackBtn");
-attackBtn.addEventListener("click", function () {
-    playerhp = playerhp - 10;
-    hpsysteem()
-});
+// var attackBtn = document.getElementById("attackBtn");
+// attackBtn.addEventListener("click", function () {
+//     playerhp = playerhp - 10;
+//     hpsysteem()
+// });
 
 
 hpsysteem()
+
+
+var selectionBtn = document.getElementById("selectionBtn");
+selectionBtn.addEventListener("click", function () {
+    var selectionScreen = document.createElement("div");
+    var Attacksbuttons = document.createElement("div");
+    selectionScreen.setAttribute("id", "selectionScreen");
+    Attacksbuttons.setAttribute("id", "Attacksbuttons");
+    document.body.appendChild(selectionScreen);
+    document.body.appendChild(Attacksbuttons);
+    for (var i = 1; i <= 5; i++) {
+        var btn = document.createElement("button");
+        btn.innerHTML = "Attack " + i;
+        btn.classList.add("Attack" + i);
+        selectionScreen.appendChild(btn);
+        Attacksbuttons.appendChild(btn);
+        btn.addEventListener("click", function () {
+        // Code voor elke button
+            selectionScreen.parentNode.removeChild(selectionScreen);
+            Attacksbuttons.parentNode.removeChild(Attacksbuttons);
+        });
+    }
+
+    // Button 1 code
+    var btn1 = document.querySelector(".Attack1");
+    btn1.addEventListener("click", function () {
+        playerhp = playerhp - 10;
+        hpsysteem()
+    });
+
+    // Button 2 code
+    var btn2 = document.querySelector(".Attack2");
+    btn2.addEventListener("click", function () {
+    //------------------------------------------------//
+
+    });
+
+    // Button 3 code
+    var btn3 = document.querySelector(".Attack3");
+    btn3.addEventListener("click", function () {
+    //------------------------------------------------//
+
+    });
+
+    // Button 4 code
+    var btn4 = document.querySelector(".Attack4");
+    btn4.addEventListener("click", function () {
+    //------------------------------------------------//
+
+    });
+
+    // Button 5 code
+    var btn5 = document.querySelector(".Attack5");
+    btn5.addEventListener("click", function () {
+    //------------------------------------------------//
+
+    });
+});
+

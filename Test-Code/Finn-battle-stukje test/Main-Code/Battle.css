@@ -33,16 +33,6 @@ body {
   transition-duration: 70ms;
 }
 
-#attackmenu {
-  bottom: 0;
-  right: 0;
-  background-color: wheat;
-  width: 700px;
-  height: 250px;
-  border-radius: 4%;
-  position: absolute;
-}
-
 #dobblesteen {
   bottom: 0;
   right: 0;
@@ -60,36 +50,89 @@ body {
   user-select: none;
 }
 
-#swordatk {
-  height: 80px;
-  width: 150px;
-  border-radius: 15px;
-  background-image: url(IMG/sword-backdrop.png);
-  background-size: 400%;
-  color: white;
-  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+#selectionScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-#archatk {
-  height: 80px;
-  width: 150px;
-  border-radius: 15px;
-  background-image: url(IMG/archer-backdrop.png);
-  background-size: 100%;
-  color: white;
-  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
-
+/* Selectie Menu Buttons */
+/*----------------------------------- */
+#Attacksbuttons {
+  position: absolute;
+  top: 500px;
+}
+.Attack1 {
+  left: 250px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  position: absolute;
 }
 
-#magicatk {
-  height: 80px;
-  width: 150px;
-  border-radius: 15px;
-  background-image: url(IMG/magic-backdrop.png);
-  color: white;
-  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+.Attack2 {
+  left: 550px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  position: absolute;
 }
 
-#run {
-  height: 50px;
+.Attack3 {
+  left: 850px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  position: absolute;
+}
+
+.Attack4 {
+  left: 1150px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  position: absolute;
+}
+
+.Attack5 {
+  left: 1450px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  position: absolute;
+}
+
+/*----------------------------------- */
+
+#selectionBtn {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  user-select: none;
 }
