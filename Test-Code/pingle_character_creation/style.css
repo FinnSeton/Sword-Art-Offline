@@ -2,10 +2,6 @@ body{
     background-color: #3D3D3D;
 }
 
-.kirito{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
 
 #cards {
     float: right;
@@ -20,4 +16,16 @@ body{
     bottom: 750px;
     right: 700px;
     color: white;
+}
+
+#Mage:hover{
+    cursor: grab;
+}
+
+#Swordsman:hover{
+    cursor: grab;
+}
+
+#Archer:hover{
+    cursor: grab;
 }
