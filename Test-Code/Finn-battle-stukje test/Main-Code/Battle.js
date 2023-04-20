@@ -2,12 +2,25 @@ var playerhpbar = document.getElementById("playerhpbar");
 var enemyhpbar = document.getElementById("enemyhpbar");
 var playerhp = 100
 
-//------------------Enemy Database---------------------// 
-const testdummy = { name: "Dummy the dum", maxhealth: 100, health: 100 };
-const testdummy2 = { name: "Dummy the dum2", maxhealth: 50, health: 25 };
-const testboss = { name: "big boi", maxhealth: 150, health: 150 };
+//------------------Normal Enemy Database---------------------// 
+var goblin = { name: "Goblin", maxhealth: 30, health: 30, mindmg: 5, maxdmg: 10 };
+var orc = { name: "Orc", maxhealth: 50, health: 50, mindmg: 10, maxdmg: 15 };
+var skeleton = { name: "Skeleton", maxhealth: 20, health: 20, mindmg: 3, maxdmg: 7 };
+var zombie = { name: "Zombie", maxhealth: 40, health: 40, mindmg: 8, maxdmg: 12 };
+var giant_spider = { name: "Giant Spider", maxhealth: 25, health: 25, mindmg: 6, maxdmg: 9 };
+var bandit = { name: "Bandit", maxhealth: 35, health: 35, mindmg: 7, maxdmg: 12 };
+var dark_knight = { name: "Dark Knight", maxhealth: 60, health: 60, mindmg: 12, maxdmg: 18 };
+var harpy = { name: "Harpy", maxhealth: 30, health: 30, mindmg: 4, maxdmg: 8 };
+var troll = { name: "Troll", maxhealth: 80, health: 80, mindmg: 15, maxdmg: 20 };
+var dragon = { name: "Dragon", maxhealth: 150, health: 150, mindmg: 25, maxdmg: 30 };
+//------------------Boss Enemy Database---------------------// 
+var necromancer = { name: "Necromancer", maxhealth: 100, health: 100, mindmg: 10, maxdmg: 20 };
+var demon_lord = { name: "Demon Lord", maxhealth: 150, health: 150, mindmg: 20, maxdmg: 30 };
+var lich_king = { name: "Lich King", maxhealth: 200, health: 200, mindmg: 25, maxdmg: 35 };
+var giant_dragon = { name: "Giant Dragon", maxhealth: 250, health: 250, mindmg: 30, maxdmg: 40 };
+var dark_god = { name: "Dark God", maxhealth: 500, health: 500, mindmg: 50, maxdmg: 60 };
 //-----------------------------------------------------// 
-var current_enemy = testboss
+var current_enemy = goblin
 //-----------------------------------------------------// 
 // function dobble(min, max) {
 //     var dobblesteenoutput = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -32,15 +45,9 @@ function hpsysteem() {
     div.setAttribute("id", "enemyhpbar");
     div.innerHTML = `<b>${current_enemy.name} ${current_enemy.health}HP</b>`;
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat((current_enemy.health / current_enemy.maxhealth * 100).toFixed(2)) + "%" + ", #ff0000 0%)"
-    document.body.appendChild(div);
+    if(current_enemy.health < 1) {div.innerHTML = `<b>${current_enemy.name} Dead</b>`;}
+    document.body.appendChild(div);    
 }
-
-// var attackBtn = document.getElementById("attackBtn");
-// attackBtn.addEventListener("click", function () {
-//     playerhp = playerhp - 10;
-//     hpsysteem()
-// });
-
 
 hpsysteem()
 
@@ -70,7 +77,7 @@ selectionBtn.addEventListener("click", function () {
     var btn1 = document.querySelector(".Attack1");
     btn1.addEventListener("click", function () {
         //------------------------------------------------//
-        playerhp = playerhp - 10;
+        playerhp -= 10;
         hpsysteem()
     });
 
