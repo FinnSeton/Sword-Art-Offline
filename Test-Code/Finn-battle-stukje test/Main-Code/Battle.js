@@ -32,9 +32,7 @@ function enemydmg() {
             playerhp += playerarmor;
             playerarmor = 0;
         }
-    } else {
-        playerhp -= enemycalcdmg;
-    }
+    } else {playerhp -= enemycalcdmg;}
 
     hpsysteem();
     var enemydamageText = document.createElement("div");
@@ -45,8 +43,7 @@ function enemydmg() {
     enemydamageText.style.right = "1616px";
     document.body.appendChild(enemydamageText);
     setTimeout(() => {
-        enemydamageText.parentNode.removeChild(enemydamageText);
-    }, 1000);
+        enemydamageText.parentNode.removeChild(enemydamageText);}, 1000);
 }
 
 function playerdmg(dmg) {
@@ -60,16 +57,13 @@ function playerdmg(dmg) {
     playerdamageText.style.right = "17px";
     document.body.appendChild(playerdamageText);
     setTimeout(() => {
-        playerdamageText.parentNode.removeChild(playerdamageText);
-    }, 1000);
+        playerdamageText.parentNode.removeChild(playerdamageText);}, 1000);
 }
-
 
 function hpsysteem() {
     var playerhpbar = document.getElementById("playerhpbar");
     var enemyhpbar = document.getElementById("enemyhpbar");
     var armorbar = document.getElementById("armorbar");
-
 
     enemyhpbar.parentNode.removeChild(enemyhpbar);
     playerhpbar.parentNode.removeChild(playerhpbar);
@@ -91,15 +85,13 @@ function hpsysteem() {
 
     if (playerarmor > 0) {
         var maxplayerarmor = 50
-        
+
         var div = document.createElement("div");
         div.setAttribute("id", "armorbar");
         div.innerHTML = `<b>${playerarmor} Armor</b>`;
         div.style.backgroundImage = "linear-gradient(to right, #47a4f0 " + parseFloat((playerarmor / maxplayerarmor * 100).toFixed(2)) + "%" + ", transparent 0%)"
         document.body.appendChild(div);
     }
-
-
 }
 
 hpsysteem()
@@ -122,7 +114,14 @@ selectionBtn.addEventListener("click", function () {
             // Code voor elke button
             selectionScreen.parentNode.removeChild(selectionScreen);
             Attacksbuttons.parentNode.removeChild(Attacksbuttons);
-        });
+            selectionBtn.disabled = true;
+            turn('enemy');
+            setTimeout(function () {
+                enemydmg();
+                turn('player');
+                selectionBtn.disabled = false;
+            }, Math.floor((Math.random() * 8000) + 3000));
+        })
     }
 
     // Button 1 code
@@ -161,3 +160,15 @@ selectionBtn.addEventListener("click", function () {
     });
 });
 
+//----------------Turn indicator---------------------//
+const turnIndicator = document.getElementById("turn-indicator");
+
+function turn(turnType) {
+    if (turnType === "player") {
+        turnIndicator.style.backgroundColor = "green";
+        turnIndicator.innerHTML = "Player Turn";
+    } else if (turnType === "enemy") {
+        turnIndicator.style.backgroundColor = "red";
+        turnIndicator.innerHTML = "Enemy Turn";
+    }
+}
