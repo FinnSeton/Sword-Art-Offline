@@ -31,23 +31,6 @@ body {
   left: 1605px;
 }
 
-#dobblesteen {
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  user-select: none;
-}
-
-#dobbleoutput {
-  bottom: 0;
-  right: 0;
-  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
-  position: absolute;
-  color: white;
-  font-size: 300%;
-  user-select: none;
-}
-
 #selectionScreen {
   position: absolute;
   top: 0;

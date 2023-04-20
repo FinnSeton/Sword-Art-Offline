@@ -30,10 +30,9 @@ function enemydmg() {
     var enemydamageText = document.createElement("div");
     enemydamageText.classList.add("damage-text");
     enemydamageText.innerHTML = `-${enemycalcdmg}`;
-    enemydamageText.style.position = 'absolute';
-    enemydamageText.style.left = '280px';
-    enemydamageText.style.bottom = '903px';
-    enemydamageText.style.zIndex = '1';
+    enemydamageText.style.position = 'fixed';
+    enemydamageText.style.top = "25px";
+    enemydamageText.style.right = "1616px";
     document.body.appendChild(enemydamageText);
     setTimeout(() => {
         enemydamageText.parentNode.removeChild(enemydamageText);
@@ -46,15 +45,15 @@ function playerdmg(dmg) {
     var playerdamageText = document.createElement("div");
     playerdamageText.classList.add("damage-text");
     playerdamageText.innerHTML = `-${dmg}`;
-    playerdamageText.style.position = 'absolute';
-    playerdamageText.style.left = '1875px';
-    playerdamageText.style.bottom = '903px';
-    playerdamageText.style.zIndex = '2';
+    playerdamageText.style.position = "fixed";
+    playerdamageText.style.top = "24px";
+    playerdamageText.style.right = "17px";
     document.body.appendChild(playerdamageText);
     setTimeout(() => {
         playerdamageText.parentNode.removeChild(playerdamageText);
     }, 1000);
 }
+
 
 function hpsysteem() {
 
@@ -68,21 +67,18 @@ function hpsysteem() {
     div.setAttribute("id", "playerhpbar");
     div.innerHTML = `<b>Player ${playerhp}HP</b>`;
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat(playerhp).toFixed(2) + "%" + ", #ff0000 0%)"
-    if(playerhp < 1) {div.innerHTML = `<b>Player Dead</b>`;}
+    if (playerhp < 1) { div.innerHTML = `<b>Player Dead</b>`; }
     document.body.appendChild(div);
 
     var div = document.createElement("div");
     div.setAttribute("id", "enemyhpbar");
     div.innerHTML = `<b>${current_enemy.name} ${current_enemy.health}HP</b>`;
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat((current_enemy.health / current_enemy.maxhealth * 100).toFixed(2)) + "%" + ", #ff0000 0%)"
-    if(current_enemy.health < 1) {div.innerHTML = `<b>${current_enemy.name} Dead</b>`;}
-    document.body.appendChild(div);    
+    if (current_enemy.health < 1) { div.innerHTML = `<b>${current_enemy.name} Dead</b>`; }
+    document.body.appendChild(div);
 }
 
-
-
 hpsysteem()
-
 
 var selectionBtn = document.getElementById("selectionBtn");
 selectionBtn.addEventListener("click", function () {
