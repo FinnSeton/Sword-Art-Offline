@@ -2,6 +2,7 @@ var playerhpbar = document.getElementById("playerhpbar");
 var enemyhpbar = document.getElementById("enemyhpbar");
 var playerhp = 100
 
+
 //------------------Normal Enemy Database---------------------// 
 var goblin = { name: "Goblin", maxhealth: 30, health: 30, mindmg: 5, maxdmg: 10 };
 var orc = { name: "Orc", maxhealth: 50, health: 50, mindmg: 10, maxdmg: 15 };
@@ -22,6 +23,38 @@ var dark_god = { name: "Dark God", maxhealth: 500, health: 500, mindmg: 50, maxd
 //-----------------------------------------------------// 
 var current_enemy = goblin
 //-----------------------------------------------------// 
+function enemydmg() {
+    let enemycalcdmg = Math.floor((Math.random() * current_enemy.maxdmg) + current_enemy.mindmg);
+    playerhp -= enemycalcdmg;
+    hpsysteem();
+    var enemydamageText = document.createElement("div");
+    enemydamageText.classList.add("damage-text");
+    enemydamageText.innerHTML = `-${enemycalcdmg}`;
+    enemydamageText.style.position = 'absolute';
+    enemydamageText.style.left = '280px';
+    enemydamageText.style.bottom = '903px';
+    enemydamageText.style.zIndex = '1';
+    document.body.appendChild(enemydamageText);
+    setTimeout(() => {
+        enemydamageText.parentNode.removeChild(enemydamageText);
+    }, 1000);
+}
+
+function playerdmg(dmg) {
+    current_enemy.health -= dmg;
+    hpsysteem()
+    var playerdamageText = document.createElement("div");
+    playerdamageText.classList.add("damage-text");
+    playerdamageText.innerHTML = `-${dmg}`;
+    playerdamageText.style.position = 'absolute';
+    playerdamageText.style.left = '1875px';
+    playerdamageText.style.bottom = '903px';
+    playerdamageText.style.zIndex = '2';
+    document.body.appendChild(playerdamageText);
+    setTimeout(() => {
+        playerdamageText.parentNode.removeChild(playerdamageText);
+    }, 1000);
+}
 
 function hpsysteem() {
 
@@ -46,11 +79,7 @@ function hpsysteem() {
     document.body.appendChild(div);    
 }
 
-function enemydmg() {
-    let calcdmg = Math.floor((Math.random() * current_enemy.maxdmg) + current_enemy.mindmg);
-    playerhp -= calcdmg
-    hpsysteem()
-}
+
 
 hpsysteem()
 
@@ -87,8 +116,7 @@ selectionBtn.addEventListener("click", function () {
     var btn2 = document.querySelector(".Attack2");
     btn2.addEventListener("click", function () {
         //------------------------------------------------//
-        current_enemy.health -= 10;
-        hpsysteem()
+        playerdmg(10)
     });
 
     // Button 3 code

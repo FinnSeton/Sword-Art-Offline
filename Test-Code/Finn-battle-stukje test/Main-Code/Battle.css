@@ -17,8 +17,6 @@ body {
   padding-left: 5px;
   margin-top: 25px;
   user-select: none;
-  transition: transform;
-  transition-duration: 70ms;
 }
 
 #enemyhpbar {
@@ -28,10 +26,9 @@ body {
   border-radius: 5px;
   float: right;
   margin-top: -20px;
-  position: relative;
+  position: absolute;
   user-select: none;
-  transition: transform;
-  transition-duration: 70ms;
+  left: 1605px;
 }
 
 #dobblesteen {
