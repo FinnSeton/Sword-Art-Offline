@@ -67,7 +67,7 @@ function hpsysteem() {
 
     enemyhpbar.parentNode.removeChild(enemyhpbar);
     playerhpbar.parentNode.removeChild(playerhpbar);
-    try { armorbar.parentNode.removeChild(armorbar); } catch { }
+    try { armorbar.parentNode.removeChild(armorbar); } catch{}
 
     var div = document.createElement("div");
     div.setAttribute("id", "playerhpbar");
@@ -80,7 +80,10 @@ function hpsysteem() {
     div.setAttribute("id", "enemyhpbar");
     div.innerHTML = `<b>${current_enemy.name} ${current_enemy.health}HP</b>`;
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat((current_enemy.health / current_enemy.maxhealth * 100).toFixed(2)) + "%" + ", #ff0000 0%)"
-    if (current_enemy.health < 1) { div.innerHTML = `<b>${current_enemy.name} Dead</b>`; }
+    if (current_enemy.health < 1) { 
+        div.innerHTML = `<b>${current_enemy.name} Dead</b>`;
+        // Hier moet uit eindelijk de doorverwijzing naar de main page  
+    }
     document.body.appendChild(div);
 
     if (playerarmor > 0) {
@@ -121,42 +124,41 @@ selectionBtn.addEventListener("click", function () {
                 turn('player');
                 selectionBtn.disabled = false;
             }, Math.floor((Math.random() * 8000) + 3000));
-        })
-    }
+        })}
 
     // Button 1 code
     var btn1 = document.querySelector(".Attack1");
     btn1.addEventListener("click", function () {
         //------------------------------------------------//
-        enemydmg()
+        playerdmg(10)
     });
 
     // Button 2 code
     var btn2 = document.querySelector(".Attack2");
     btn2.addEventListener("click", function () {
         //------------------------------------------------//
-        playerdmg(10)
+        playerdmg(15)
     });
 
     // Button 3 code
     var btn3 = document.querySelector(".Attack3");
     btn3.addEventListener("click", function () {
         //------------------------------------------------//
-
+        playerdmg(20)
     });
 
     // Button 4 code
     var btn4 = document.querySelector(".Attack4");
     btn4.addEventListener("click", function () {
         //------------------------------------------------//
-
+        playerdmg(25)
     });
 
     // Button 5 code
     var btn5 = document.querySelector(".Attack5");
     btn5.addEventListener("click", function () {
         //------------------------------------------------//
-
+        playerdmg(30)
     });
 });
 
