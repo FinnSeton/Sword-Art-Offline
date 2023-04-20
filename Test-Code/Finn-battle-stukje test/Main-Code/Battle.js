@@ -1,14 +1,21 @@
 var playerhpbar = document.getElementById("playerhpbar");
 var enemyhpbar = document.getElementById("enemyhpbar");
 var playerhp = 100
-var enemyhp = 100
 
-function dobble(min, max) {
-    var dobblesteenoutput = Math.floor(Math.random() * (max - min + 1)) + min;
-    return dobblesteenoutput
-}
+//------------------Enemy Database---------------------// 
+const testdummy = {name:"Dummy the dum", maxhealth:100, health:100};
+const testdummy2 = {name:"Dummy the dum2", maxhealth:50, health:25};
+const testboss = {name:"big boi", maxhealth:150, health:150};
+//-----------------------------------------------------// 
+var current_enemy = testboss
+//-----------------------------------------------------// 
+// function dobble(min, max) {
+//     var dobblesteenoutput = Math.floor(Math.random() * (max - min + 1)) + min;
+//     return dobblesteenoutput
+// }
 
 function hpsysteem() {
+
     var playerhpbar = document.getElementById("playerhpbar");
     playerhpbar.parentNode.removeChild(playerhpbar);
 
@@ -23,8 +30,8 @@ function hpsysteem() {
 
     var div = document.createElement("div");
     div.setAttribute("id", "enemyhpbar");
-    div.innerHTML = `<b>Enemy ${enemyhp}HP</b>`;
-    div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat(enemyhp).toFixed(2) + "%" + ", #ff0000 0%)"
+    div.innerHTML = `<b>${current_enemy.name} ${current_enemy.health}HP</b>`;
+    div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat((current_enemy.health / current_enemy.maxhealth * 100).toFixed(2)) + "%" + ", #ff0000 0%)"
     document.body.appendChild(div);
 }
 
@@ -62,6 +69,7 @@ selectionBtn.addEventListener("click", function () {
     // Button 1 code
     var btn1 = document.querySelector(".Attack1");
     btn1.addEventListener("click", function () {
+        //------------------------------------------------//
         playerhp = playerhp - 10;
         hpsysteem()
     });
@@ -70,7 +78,8 @@ selectionBtn.addEventListener("click", function () {
     var btn2 = document.querySelector(".Attack2");
     btn2.addEventListener("click", function () {
     //------------------------------------------------//
-
+       current_enemy.health -= 10;
+        hpsysteem()
     });
 
     // Button 3 code
