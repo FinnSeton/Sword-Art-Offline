@@ -1,6 +1,6 @@
-var playerhpbar = document.getElementById("playerhpbar");
-var enemyhpbar = document.getElementById("enemyhpbar");
 var playerhp = 100
+var playerarmor = 50
+
 
 
 //------------------Normal Enemy Database---------------------// 
@@ -25,7 +25,17 @@ var current_enemy = goblin
 //-----------------------------------------------------// 
 function enemydmg() {
     let enemycalcdmg = Math.floor((Math.random() * current_enemy.maxdmg) + current_enemy.mindmg);
-    playerhp -= enemycalcdmg;
+    if (playerarmor > 0) {
+        playerarmor -= enemycalcdmg;
+        if (playerarmor < 0) {
+            // If armor is negative, add the excess damage to the player's health points
+            playerhp += playerarmor;
+            playerarmor = 0;
+        }
+    } else {
+        playerhp -= enemycalcdmg;
+    }
+
     hpsysteem();
     var enemydamageText = document.createElement("div");
     enemydamageText.classList.add("damage-text");
@@ -56,17 +66,19 @@ function playerdmg(dmg) {
 
 
 function hpsysteem() {
-
     var playerhpbar = document.getElementById("playerhpbar");
-    playerhpbar.parentNode.removeChild(playerhpbar);
-
     var enemyhpbar = document.getElementById("enemyhpbar");
+    var armorbar = document.getElementById("armorbar");
+
+
     enemyhpbar.parentNode.removeChild(enemyhpbar);
+    playerhpbar.parentNode.removeChild(playerhpbar);
+    try { armorbar.parentNode.removeChild(armorbar); } catch { }
 
     var div = document.createElement("div");
     div.setAttribute("id", "playerhpbar");
     div.innerHTML = `<b>Player ${playerhp}HP</b>`;
-    div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat(playerhp).toFixed(2) + "%" + ", #ff0000 0%)"
+    div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat((playerhp).toFixed(2)) + "%" + ", #ff0000 0%)"
     if (playerhp < 1) { div.innerHTML = `<b>Player Dead</b>`; }
     document.body.appendChild(div);
 
@@ -76,6 +88,18 @@ function hpsysteem() {
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat((current_enemy.health / current_enemy.maxhealth * 100).toFixed(2)) + "%" + ", #ff0000 0%)"
     if (current_enemy.health < 1) { div.innerHTML = `<b>${current_enemy.name} Dead</b>`; }
     document.body.appendChild(div);
+
+    if (playerarmor > 0) {
+        var maxplayerarmor = 50
+        
+        var div = document.createElement("div");
+        div.setAttribute("id", "armorbar");
+        div.innerHTML = `<b>${playerarmor} Armor</b>`;
+        div.style.backgroundImage = "linear-gradient(to right, #47a4f0 " + parseFloat((playerarmor / maxplayerarmor * 100).toFixed(2)) + "%" + ", transparent 0%)"
+        document.body.appendChild(div);
+    }
+
+
 }
 
 hpsysteem()
