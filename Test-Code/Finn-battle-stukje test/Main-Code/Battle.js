@@ -22,10 +22,6 @@ var dark_god = { name: "Dark God", maxhealth: 500, health: 500, mindmg: 50, maxd
 //-----------------------------------------------------// 
 var current_enemy = goblin
 //-----------------------------------------------------// 
-// function dobble(min, max) {
-//     var dobblesteenoutput = Math.floor(Math.random() * (max - min + 1)) + min;
-//     return dobblesteenoutput
-// }
 
 function hpsysteem() {
 
@@ -39,6 +35,7 @@ function hpsysteem() {
     div.setAttribute("id", "playerhpbar");
     div.innerHTML = `<b>Player ${playerhp}HP</b>`;
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat(playerhp).toFixed(2) + "%" + ", #ff0000 0%)"
+    if(playerhp < 1) {div.innerHTML = `<b>Player Dead</b>`;}
     document.body.appendChild(div);
 
     var div = document.createElement("div");
@@ -47,6 +44,12 @@ function hpsysteem() {
     div.style.backgroundImage = "linear-gradient(to right, #00ff00 " + parseFloat((current_enemy.health / current_enemy.maxhealth * 100).toFixed(2)) + "%" + ", #ff0000 0%)"
     if(current_enemy.health < 1) {div.innerHTML = `<b>${current_enemy.name} Dead</b>`;}
     document.body.appendChild(div);    
+}
+
+function enemydmg() {
+    let calcdmg = Math.floor((Math.random() * current_enemy.maxdmg) + current_enemy.mindmg);
+    playerhp -= calcdmg
+    hpsysteem()
 }
 
 hpsysteem()
@@ -77,8 +80,7 @@ selectionBtn.addEventListener("click", function () {
     var btn1 = document.querySelector(".Attack1");
     btn1.addEventListener("click", function () {
         //------------------------------------------------//
-        playerhp -= 10;
-        hpsysteem()
+        enemydmg()
     });
 
     // Button 2 code
