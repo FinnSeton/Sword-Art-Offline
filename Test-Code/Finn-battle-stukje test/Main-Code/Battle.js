@@ -3,9 +3,9 @@ var enemyhpbar = document.getElementById("enemyhpbar");
 var playerhp = 100
 
 //------------------Enemy Database---------------------// 
-const testdummy = {name:"Dummy the dum", maxhealth:100, health:100};
-const testdummy2 = {name:"Dummy the dum2", maxhealth:50, health:25};
-const testboss = {name:"big boi", maxhealth:150, health:150};
+const testdummy = { name: "Dummy the dum", maxhealth: 100, health: 100 };
+const testdummy2 = { name: "Dummy the dum2", maxhealth: 50, health: 25 };
+const testboss = { name: "big boi", maxhealth: 150, health: 150 };
 //-----------------------------------------------------// 
 var current_enemy = testboss
 //-----------------------------------------------------// 
@@ -60,7 +60,7 @@ selectionBtn.addEventListener("click", function () {
         selectionScreen.appendChild(btn);
         Attacksbuttons.appendChild(btn);
         btn.addEventListener("click", function () {
-        // Code voor elke button
+            // Code voor elke button
             selectionScreen.parentNode.removeChild(selectionScreen);
             Attacksbuttons.parentNode.removeChild(Attacksbuttons);
         });
@@ -77,29 +77,29 @@ selectionBtn.addEventListener("click", function () {
     // Button 2 code
     var btn2 = document.querySelector(".Attack2");
     btn2.addEventListener("click", function () {
-    //------------------------------------------------//
-       current_enemy.health -= 10;
+        //------------------------------------------------//
+        current_enemy.health -= 10;
         hpsysteem()
     });
 
     // Button 3 code
     var btn3 = document.querySelector(".Attack3");
     btn3.addEventListener("click", function () {
-    //------------------------------------------------//
+        //------------------------------------------------//
 
     });
 
     // Button 4 code
     var btn4 = document.querySelector(".Attack4");
     btn4.addEventListener("click", function () {
-    //------------------------------------------------//
+        //------------------------------------------------//
 
     });
 
     // Button 5 code
     var btn5 = document.querySelector(".Attack5");
     btn5.addEventListener("click", function () {
-    //------------------------------------------------//
+        //------------------------------------------------//
 
     });
 });
