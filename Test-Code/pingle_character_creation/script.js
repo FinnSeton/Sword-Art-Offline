@@ -8,7 +8,7 @@ let class_picked = '';
 const submitButton = document.querySelector('input[type="submit"]');
 
 submitButton.addEventListener('click', function (event) {
-    event.preventDefault(); // prevent form submission
+    event.preventDefault();
 
     const nameInput = document.getElementById('fname');
     const lengthInput = document.getElementById('lname');

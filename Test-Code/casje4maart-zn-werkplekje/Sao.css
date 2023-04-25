@@ -1,12 +1,42 @@
 body {
     background-image: url("IMG/map.png");
     background-repeat: no-repeat;
-    background-size: cover 
+    background-size: cover;
+    user-select: none;
   }
 
 img {
   height: 100px; 
-  opacity: 90%;
-  margin-left: 41.5%;
-  margin-top: 3.5%;
+  position: absolute;
+}
+
+#casje {
+  position: absolute;
+  z-index: 2;
+}
+
+img[src="IMG/bigcastle.png"] {
+  left: 600px;
+  top: 350px;
+  height: 130px;
+  width: 130px;
+}
+img[src="IMG/bigdorp.png"] {
+  left: 1350px;
+  top: 480px;
+}
+
+img[src="IMG/camp.png"] {
+  left: 1100px;
+  top: 600px;
+}
+
+img[src="IMG/castle.png"] {
+  left: 650px;
+  top: 650px;
+}
+
+img[src="IMG/dorp.png"] {
+  left: 1050px;
+  top: 450px;
 }
