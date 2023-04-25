@@ -1,8 +1,12 @@
 body {
-    background-color: #3D3D3D;
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
     user-select: none;
+    
 }
-
+  
 #kirito {
     position: absolute;
     bottom: 0;
@@ -24,10 +28,12 @@ body {
 #input {
     float: right;
     position: relative;
-    top: 20px;
+    top: 40px;
     bottom: 750px;
-    right: 700px;
+    right: 600px;
     color: white;
+
+
 }
 
 #Mage:hover,
@@ -44,7 +50,8 @@ label {
 }
 
 .card-selected {
-    border: 2px solid #1abc9c;
+    border: 1px solid #4e4e4e;
+    border-radius: 25px;
 }
 
 #cards img:hover {
@@ -74,6 +81,18 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #16a085;
+    background-color: #4e4e4e;
     cursor: pointer;
+}
+
+#backdrop {
+    position: absolute;
+    background-color: #373737;;
+    border-radius: 25px;
+    top: 20px;
+    height: 700px;
+    width: 800px;
+    right: 25px;
+    border-style: solid;
+    border-color: black;
 }
