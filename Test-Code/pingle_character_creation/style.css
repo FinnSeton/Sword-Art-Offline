@@ -1,31 +1,79 @@
-body{
+body {
     background-color: #3D3D3D;
+    user-select: none;
 }
 
+#kirito {
+    position: absolute;
+    bottom: 0;
+    height: 900px;
+    width: auto;
+}
 
 #cards {
     float: right;
     position: relative;
     bottom: 650px;
     left: 250px;
+    top: 300px;
+    right: 200px;
+    bottom: 477px !important;
+    left: 139px !important;
 }
 
 #input {
     float: right;
     position: relative;
+    top: 20px;
     bottom: 750px;
     right: 700px;
     color: white;
 }
 
-#Mage:hover{
+#Mage:hover,
+#Swordsman:hover,
+#Archer:hover {
     cursor: grab;
 }
 
-#Swordsman:hover{
-    cursor: grab;
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffffff;
 }
 
-#Archer:hover{
-    cursor: grab;
+.card-selected {
+    border: 2px solid #1abc9c;
+}
+
+#cards img:hover {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #16a085;
+    cursor: pointer;
 }
