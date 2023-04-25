@@ -1,8 +1,6 @@
 var playerhp = 100
 var playerarmor = 50
 
-
-
 //------------------Normal Enemy Database---------------------// 
 var goblin = { name: "Goblin", maxhealth: 30, health: 30, mindmg: 5, maxdmg: 10 };
 var orc = { name: "Orc", maxhealth: 50, health: 50, mindmg: 10, maxdmg: 15 };
@@ -21,7 +19,7 @@ var lich_king = { name: "Lich King", maxhealth: 200, health: 200, mindmg: 25, ma
 var giant_dragon = { name: "Giant Dragon", maxhealth: 250, health: 250, mindmg: 30, maxdmg: 40 };
 var dark_god = { name: "Dark God", maxhealth: 500, health: 500, mindmg: 50, maxdmg: 60 };
 //-----------------------------------------------------// 
-var current_enemy = goblin
+var current_enemy = necromancer
 //-----------------------------------------------------// 
 function enemydmg() {
     let enemycalcdmg = Math.floor((Math.random() * current_enemy.maxdmg) + current_enemy.mindmg);
