@@ -1,3 +1,4 @@
+
 function Playerloca(path, position) {
     const imageContainer = document.getElementById("casje");
     const existingImage = document.querySelector("#casje img");
@@ -9,9 +10,16 @@ function Playerloca(path, position) {
         startpos: [
             { left: 1380, top: 450 },
         ],
+        forestcamp: [
+            { left: 1125, top: 558 },
+        ],
         path1: [
-            { left: 50, top: 50 },
-            { left: 400, top: 400 }
+            { left: 1350, top: 480 },
+            { left: 1327, top: 503 },
+            { left: 1300, top: 520 },
+            { left: 1242, top: 550 },
+            { left: 1208, top: 555 },
+            { left: 1176, top: 558 }
         ],
         path2: [
             { left: 250, top: 50 },
@@ -46,7 +54,5 @@ function Playerloca(path, position) {
     imageContainer.appendChild(image);
 }
 
-
-
-Playerloca("startpos", 0); // 0 = 1, 1 =2 etc
+Playerloca("forestcamp", 0); // 0 = 1, 1 =2 etc
 

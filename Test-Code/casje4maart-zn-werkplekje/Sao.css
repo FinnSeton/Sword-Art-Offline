@@ -1,42 +1,17 @@
 body {
-     background-image: url("IMG/devmap.png"); /*testmap.png is main */
-    background-repeat: no-repeat;
-    background-size: cover;
-    user-select: none;
-  }
+  background-image: url("IMG/devmap.png"); /*testmap.png is main */
+ background-repeat: no-repeat;
+ background-size: cover;
+ user-select: none;
+}
 
 img {
-  height: 100px; 
-  position: absolute;
+ height: 100px; 
+ position: absolute;
 }
 
 #casje {
-  position: absolute;
-  z-index: 2;
+ position: absolute;
+ z-index: 2;
 }
 
-img[src="IMG/bigcastle.png"] {
-  left: 600px;
-  top: 350px;
-  height: 130px;
-  width: 130px;
-}
-img[src="IMG/bigdorp.png"] {
-  left: 1350px;
-  top: 480px;
-}
-
-img[src="IMG/camp.png"] {
-  left: 1100px;
-  top: 600px;
-}
-
-img[src="IMG/castle.png"] {
-  left: 650px;
-  top: 650px;
-}
-
-img[src="IMG/dorp.png"] {
-  left: 1050px;
-  top: 450px;
-}
