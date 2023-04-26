@@ -1,5 +1,5 @@
 body {
-    background-image: url("IMG/map.png");
+     background-image: url("IMG/devmap.png"); /*testmap.png is main */
     background-repeat: no-repeat;
     background-size: cover;
     user-select: none;
