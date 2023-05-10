@@ -89,8 +89,20 @@ function Playerloca(path, position) {
 
         ],
         path6: [
-            { left: 1050, top: 50 },
-            { left: 1150, top: 50 }
+            { left: 1110, top: 590 },
+            { left: 1100, top: 615 },
+            { left: 1070, top: 630 },
+            { left: 1040, top: 620 },
+            { left: 1010, top: 600 },
+            { left: 980, top: 600 },
+            { left: 945, top: 605 },
+            { left: 910, top: 595 },
+            { left: 885, top: 570 },
+            { left: 850, top: 560 },
+            { left: 820, top: 560 },
+            { left: 785, top: 560 },
+            { left: 755, top: 565 },
+            { left: 725, top: 580 },
         ],
         path7: [
             { left: 635, top: 575 },
