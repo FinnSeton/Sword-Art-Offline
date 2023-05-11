@@ -7,125 +7,116 @@ function Playerloca(path, position) {
 
     const positions = {
         startpos: [
-            { left: 1380, top: 450 }
+            { left: "92%", top: "56.25%" }
         ],
         forestcamp: [
-            { left: 1125, top: 558 }
+            { left: "75%", top: "69.75%" }
         ],
-        dorp: [ {left: 1075, top: 415}
+        dorp: [
+            { left: "71.67%", top: "51.87%" }
         ],
         smallcastle: [
-            { left: 675, top: 610 }
+            { left: "45%", top: "76.25%" }
         ],
         bigcastle: [
-            { left: 640, top: 340 }
+            { left: "42.67%", top: "42.5%" }
         ],
-
         path1: [
-            { left: 1350, top: 480 },
-            { left: 1327, top: 503 },
-            { left: 1300, top: 520 },
-            { left: 1242, top: 550 },
-            { left: 1208, top: 555 },
-            { left: 1176, top: 558 },
+            { left: "90%", top: "51.43%" },
+            { left: "88.47%", top: "50.2%" },
+            { left: "86.67%", top: "52%" },
+            { left: "82.8%", top: "55%" },
+            { left: "80.53%", top: "55.62%" },
+            { left: "78.4%", top: "55.87%" }
         ],
         path2: [
-            { left: 1320, top: 450},
-            { left: 1295, top: 450},
-            { left: 1275, top: 435},
-            { left: 1250, top: 420},
-            { left: 1225, top: 420},
-            { left: 1200, top: 420},
-            { left: 1175, top: 420},
-            { left: 1150, top: 420},
-            { left: 1125, top: 415},      
+            { left: "88%", top: "45%" },
+            { left: "86.33%", top: "45%" },
+            { left: "85%", top: "43.12%" },
+            { left: "83.33%", top: "42%" },
+            { left: "81.67%", top: "42%" },
+            { left: "80%", top: "42%" },
+            { left: "78.33%", top: "42%" },
+            { left: "76.67%", top: "42%" },
+            { left: "75%", top: "51.87%" }
         ],
-
         path3: [
-            { left: 1050, top: 470},
-            { left: 1065, top: 470},
-            { left: 1100, top: 470},
-            { left: 1130, top: 470},
-            { left: 1130, top: 495},
-            { left: 1100, top: 500},
-            { left: 1075, top: 510},
-            { left: 1060, top: 535},
-            { left: 1075, top: 555},
+            { left: "70%", top: "54.38%" },
+            { left: "70.87%", top: "54.38%" },
+            { left: "73.33%", top: "54.38%" },
+            { left: "75.33%", top: "54.38%" },
+            { left: "75.33%", top: "61.87%" },
+            { left: "73.33%", top: "62.5%" },
+            { left: "71.67%", top: "63.75%" },
+            { left: "70.67%", top: "67.19%" },
+            { left: "71.67%", top: "69.38%" }
         ],
         path4: [
-            { left: 1025, top: 410 },
-            { left: 1010, top: 440 },
-            { left: 1000, top: 470 },
-            { left: 950, top: 505 },
-            { left: 920, top: 505 },
-            { left: 880, top: 500 },
-            { left: 845, top: 500 },
-            { left: 815, top: 500 },
-            { left: 780, top: 505 },
-            { left: 750, top: 520 },
-            { left: 735, top: 535 },
-            { left: 700, top: 550 },
+            { left: "68.33%", top: "51.25%" },
+            { left: "67.33%", top: "55%" },
+            { left: "66.67%", top: "59.38%" },
+            { left: "63.33%", top: "63.12%" },
+            { left: "61.33%", top: "63.12%" },
+            { left: "58.67%", top: "62.5%" },
+            { left: "55.67%", top: "62.5%" },
+            { left: "53.67%", top: "62.5%" },
+            { left: "52%", top: "63.12%" },
+            { left: "50%", top: "68.75%" },
+            { left: "49%", top: "67.19%" },
+            { left: "46.67%", top: "68.75%" },
+            { left: "46.67%", top: "73.12%" },
+            { left: "46.33%", top: "76.25%" },
+            { left: "45.33%", top: "78.12%" },
+            { left: "44%", top: "79.37%" },
+            { left: "42.67%", top: "81.25%" },
+            { left: "41.67%", top: "82.87%" },
+            { left: "40%", top: "85%" },
+            { left: "38%", top: "87.5%" }
         ],
         path5: [
-            { left: 1100, top: 350 },
-            { left: 1095, top: 315 },
-            { left: 1070, top: 300 },
-            { left: 1025, top: 310 },
-            { left: 995, top: 320 },
-            { left: 960, top: 305 },
-            { left: 930, top: 290 },
-            { left: 895, top: 290 },
-            { left: 860, top: 310 },
-            { left: 835, top: 335 },
-            { left: 810, top: 355 },
-            { left: 785, top: 380 },
-            { left: 785, top: 410 },
-            { left: 775, top: 445 },
-            { left: 760, top: 465 }, 
-            { left: 735, top: 485 },
-            { left: 710, top: 505 },
-            { left: 685, top: 530 },
-
-
+            { left: "73.33%", top: "46.25%" },
+            { left: "73%", top: "42.19%" },
+            { left: "71.33%", top: "40%" },
+            { left: "68.33%", top: "41.25%" },
+            { left: "66.33%", top: "42.5%" },
+            { left: "64%", top: "40.37%" },
+            { left: "61%", top: "38.12%" },
+            { left: "59.67%", top: "38.12%" },
+            { left: "57.33%", top: "41.25%" },
+            { left: "55.67%", top: "44.37%" },
+            { left: "54%", top: "46.87%" },
+            { left: "52.33%", top: "49.38%" },
+            { left: "52.33%", top: "53.75%" },
+            { left: "51.67%", top: "58.12%" },
+            { left: "50.67%", top: "61.87%" },
+            { left: "49.33%", top: "63.12%" },
+            { left: "48.33%", top: "64.37%" },
+            { left: "46.33%", top: "67.5%" }
         ],
         path6: [
-            { left: 1110, top: 590 },
-            { left: 1100, top: 615 },
-            { left: 1070, top: 630 },
-            { left: 1040, top: 620 },
-            { left: 1010, top: 600 },
-            { left: 980, top: 600 },
-            { left: 945, top: 605 },
-            { left: 910, top: 595 },
-            { left: 885, top: 570 },
-            { left: 850, top: 560 },
-            { left: 820, top: 560 },
-            { left: 785, top: 560 },
-            { left: 755, top: 565 },
-            { left: 725, top: 580 },
+            { left: 1050, top: 50 },
+            { left: 1150, top: 50 }
         ],
         path7: [
-            { left: 635, top: 575 },
-            { left: 640, top: 535 },
-            { left: 655, top: 510 },
-            { left: 675, top: 490 },
-            { left: 695, top: 475 },
-            { left: 710, top: 450 },
-            { left: 730, top: 425 },
-            { left: 735, top: 395 },
-            { left: 730, top: 365 },
-            { left: 715, top: 340 },
+            { left: "42.33%", top: "71.87%" },
+            { left: "42.67%", top: "66.87%" },
+            { left: "44%", top: "63.75%" },
+            { left: "46%", top: "61.25%" },
+            { left: "47.67%", top: "59.37%" },
+            { left: "49.33%", top: "56.25%" },
+            { left: "51.33%", top: "53.12%" },
+            { left: "51.67%", top: "49.37%" },
+            { left: "51.33%", top: "45.62%" },
+            { left: "50.67%", top: "42.5%" }
         ]
     };
 
     const image = document.createElement("img");
     image.src = "IMG/cas.png";
-    image.style.left = positions[path][position].left + "px";
-    image.style.top = positions[path][position].top + "px";
+    image.style.left = positions[path][position].left;
+    image.style.top = positions[path][position].top;
     imageContainer.appendChild(image);
-}
-
-
-
-Playerloca("startpos", 0); // 0 = 1, 1 =2 etc
-
+  }
+  
+  // Example usage: Change player's location to "path1", position 0
+  Playerloca("path1", 1);
