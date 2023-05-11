@@ -94,8 +94,8 @@ function Playerloca(path, position) {
             { left: "46.33%", top: "67.5%" }
         ],
         path6: [
-            { left: 1050, top: 50 },
-            { left: 1150, top: 50 }
+            { left: "48.33%", top: "64.37%" },
+            { left: "46.33%", top: "67.5%" }
         ],
         path7: [
             { left: "42.33%", top: "71.87%" },
