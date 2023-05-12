@@ -3,6 +3,7 @@
 body {
   background-image: url("IMG/Battlebackground.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -31,13 +32,9 @@ body {
 #enemyhpbar {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 300px;
-  padding-left: 5px;
-  border-radius: 5px;
+  position: relative;
   float: right;
-  margin-top: -20px;
-  position: absolute;
-  user-select: none;
-  left: 1605px;
+  border-radius: 5px;
 }
 
 #selectionScreen {

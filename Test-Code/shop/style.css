@@ -1,0 +1,29 @@
+body{
+    background-image: url('img/shop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+img{
+    position: absolute;
+}
+#sword{
+    left: 32%;
+    top: 15%;
+}
+
+#weed{
+    left:4%;
+    top: 17%;
+}
+
+#spell{
+    left:62.5%;
+    top:31%;
+}
+
+#shield{
+    left: 76% ;
+    top: 32% ;
+}
