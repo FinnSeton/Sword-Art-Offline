@@ -20,7 +20,7 @@ img {
 
 img[src="IMG/cas.png"] {
   z-index: 2;
-  position: relative;
+  position: absolute;
 }
 
 img[src="IMG/bigcastle.png"] {
